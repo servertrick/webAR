@@ -9,8 +9,11 @@
   <link rel="stylesheet" type="text/css" href="style.css" />
   <title>Cable routing: Front 2SFF drive option for SFF</title>
   <script src="https://h50007.www5.hpe.com/caas-static/js/framework/jquery/v-1-8/jquery.js"></script>
-	<script src="https://h50007.www5.hpe.com/caas-static/js/framework/jquery/v-1-8/can.jquery.js"></script>
+  <script src="https://h50007.www5.hpe.com/caas-static/js/framework/jquery/v-1-8/can.jquery.js"></script>
   <script src="https://h50007.www5.hpe.com/hfws/us/en/hpe/latest.r?contentType=js"></script>
+  <!-- Import the component -->
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+  <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
 </head>
 
 <body id="GUID-76C9E454-E5AA-4A65-BA5E-132A7D306E07" id="header" class="header">
@@ -82,6 +85,10 @@
           </p>
           <p class="p text-center"><a class="xref external btn" href="mammoth-demo6.usdz" target="_blank" rel="ar">View in AR</a>
           </p>
+	  <p class="p text-center"><a class="xref external btn" href="fr_bezel.glb" target="_blank" rel="ar">View in AR</a>
+          </p>	  
+         <!-- Use it like any other HTML element -->
+         <model-viewer src="fr_bezel.glb" alt="A 3D model of a bezel" auto-rotate camera-controls></model-viewer>
         </section>
       </div>
     </article>
